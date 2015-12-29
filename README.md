@@ -1,6 +1,6 @@
-# Todo
+# Todo.ex
 
-**TODO: Add description**
+**Elixir/OTP application to implement a simple TODO application. Erlang Term Storage (ETS) is used as a cache to store all lists. **
 
 ## Installation
 

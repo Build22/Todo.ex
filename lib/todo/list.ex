@@ -27,7 +27,7 @@ defmodule Todo.List do
   end
 
   def init(name) do
-    state = %{name: name, items: []}
+    state = Cache.find(name) || %{name: name, items: []}
     {:ok, state}
   end
 
