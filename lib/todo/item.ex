@@ -9,5 +9,5 @@ defmodule Todo.Item do
       description: description
     }
   end
-  
+
 end

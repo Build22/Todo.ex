@@ -32,5 +32,4 @@ defmodule Todo.ListTest do
     assert List.items(list) == [item]
   end
 
-
 end

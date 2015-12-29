@@ -9,6 +9,7 @@ defmodule Todo do
     children = [
       # Define workers and child supervisors to be supervised
       # worker(Todo.Worker, [arg1, arg2, arg3]),
+      worker(Todo.Cache, []),
       supervisor(Todo.Server, [])
     ]
 
