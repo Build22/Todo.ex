@@ -3,9 +3,16 @@ defmodule Todo.ListTest do
 
   alias Todo.List
   alias Todo.Item
+  alias Todo.Cache
+
 
   setup do
     {:ok, list} = List.start_link("Home")
+
+    on_exit fn ->
+      Cache.clear
+    end
+
     {:ok, list: list}
   end
 
